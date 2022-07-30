@@ -16,6 +16,7 @@
 121. useEffect - precautions
 122. Generic custom hook form
 123. Reset form method
+124. useFetch - CustomHook
 
 ## Tests
 
