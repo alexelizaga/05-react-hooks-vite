@@ -13,6 +13,7 @@
 118. useEffect - SimpleForm
 119. useEffect dependencys
 120. useEffect - unmount cleanup
+121. useEffect - precautions
 
 ## Tests
 
