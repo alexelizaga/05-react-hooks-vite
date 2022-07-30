@@ -8,6 +8,8 @@
 
 114. Start Hooks App proyect
 115. useState
+116. useCounter - CustomHook
+117. Export hook methods
 
 ## Tests
 
