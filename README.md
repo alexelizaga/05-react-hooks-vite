@@ -18,6 +18,7 @@
 123. Reset form method
 124. useFetch - CustomHook
 125. useFetch + useCounter
+126. Connect bouth hooks
 
 ## Tests
 

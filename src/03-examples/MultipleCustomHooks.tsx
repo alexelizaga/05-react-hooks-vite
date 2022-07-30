@@ -1,9 +1,11 @@
 import { useFetch } from '../hooks/useFetch';
 import { QuotesResponse } from '../interface/quotesResponse';
+import { useCounter } from '../hooks/useCounter';
 
 export const MultipleCustomHooks = () => {
 
-    const { data, isLoading, hasError } = useFetch('quotes/1');
+    const { counter, increment } = useCounter(1);
+    const { data, isLoading, hasError } = useFetch(`quotes/${counter}`);
     const { author, quote }: any = !!data && data[0];
 
 
@@ -27,7 +29,11 @@ export const MultipleCustomHooks = () => {
                     )
             }
 
-            <button className='btn btn-primary'>
+            <button
+                className='btn btn-primary'
+                onClick={() => increment()}
+                disabled={isLoading}
+            >
                 Next quote
             </button>
 
