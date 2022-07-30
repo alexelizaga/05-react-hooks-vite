@@ -4,7 +4,7 @@ import breakingBadApi from '../apis/breakingBadApi';
 import { QuotesResponse } from '../interface/quotesResponse';
 
 interface UseFetchState {
-    data: QuotesResponse | null,
+    data: QuotesResponse[] | null,
     isLoading: boolean,
     hasError: any,
 }
@@ -24,7 +24,7 @@ export const useFetch = ( url: string ) => {
             isLoading: true,
         });
 
-        const { data } = await breakingBadApi.get<QuotesResponse>( url );
+        const { data } = await breakingBadApi.get<QuotesResponse[]>( url );
         
         setState({
             data,
