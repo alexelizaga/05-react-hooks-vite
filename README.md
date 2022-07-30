@@ -14,6 +14,8 @@
 119. useEffect dependencys
 120. useEffect - unmount cleanup
 121. useEffect - precautions
+122. Generic custom hook form
+123. Reset form method
 
 ## Tests
 
