@@ -19,6 +19,7 @@
 124. useFetch - CustomHook
 125. useFetch + useCounter
 126. Connect bouth hooks
+127. Optimizations
 
 ## Tests
 
