@@ -21,6 +21,7 @@
 126. Connect bouth hooks
 127. Optimizations
 128. useRef
+129. useLayoutEffect
 
 ## Tests
 
