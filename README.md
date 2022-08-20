@@ -22,6 +22,7 @@
 127. Optimizations
 128. useRef
 129. useLayoutEffect
+130. Memo - React Method
 
 ## Tests
 
