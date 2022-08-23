@@ -24,6 +24,7 @@
 129. useLayoutEffect
 130. Memo - React Method
 131. useMemo
+132. useCallback
 
 ## Tests
 
