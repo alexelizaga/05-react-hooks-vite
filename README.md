@@ -25,6 +25,7 @@
 130. Memo - React Method
 131. useMemo
 132. useCallback
+133. useCallback with arguments
 
 ## Tests
 

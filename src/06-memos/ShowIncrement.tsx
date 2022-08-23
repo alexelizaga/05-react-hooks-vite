@@ -1,7 +1,7 @@
 import React from 'react';
 
 interface ShowIncrementProps {
-    increment: () => void;
+    increment: ( value: number ) => void;
 }
 
 export const ShowIncrement =  React.memo( ({ increment }: ShowIncrementProps) => {
@@ -11,7 +11,7 @@ export const ShowIncrement =  React.memo( ({ increment }: ShowIncrementProps) =>
     return (
         <button
             className="btn btn-primary"
-            onClick={ () => { increment() } }
+            onClick={ () => { increment( 5 ) } }
         >
             Increment
         </button>
