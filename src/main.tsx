@@ -11,7 +11,8 @@ import ReactDOM from 'react-dom/client'
 // import { Layout } from './05-useLayoutEffect/Layout';
 // import { Memorize } from './06-memos/Memorize';
 // import { MemoHook } from './06-memos/MemoHook';
-import { CallbackHook } from './06-memos/CallbackHook';
+// import { CallbackHook } from './06-memos/CallbackHook';
+import { Father } from './07-memo-task/Father';
 
 import './index.css'
 
@@ -22,5 +23,6 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     // </React.StrictMode>
 
     // <MemoHook />
-    <CallbackHook />
+    // <CallbackHook />
+    <Father />
 )

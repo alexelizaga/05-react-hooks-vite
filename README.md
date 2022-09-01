@@ -26,6 +26,7 @@
 131. useMemo
 132. useCallback
 133. useCallback with arguments
+134. Memorize task
 
 ## Tests
 
