@@ -27,6 +27,7 @@
 132. useCallback
 133. useCallback with arguments
 134. Memorize task
+141. useReducer - Todo List
 
 ## Tests
 
