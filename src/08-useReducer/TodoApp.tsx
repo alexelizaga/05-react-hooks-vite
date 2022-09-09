@@ -14,7 +14,7 @@ const initialState: TodoState = [
 ]
 
 const init = () => {
-    return JSON.parse( localStorage.getItem('todos') ) || [];
+    return JSON.parse( localStorage.getItem('todos') || '' ) || [];
 }
 
 export const TodoApp = () => {
@@ -41,6 +41,13 @@ export const TodoApp = () => {
         })
     }
 
+    const handleToggleTodo = ( todo: Todo ) => {
+        dispatch({
+            type: '[TODO] Toggle Todo',
+            payload: todo
+        })
+    }
+
     return (
         <>
             <h1>TodoApp: { todos.length }, <small>pendientes: 2</small> </h1>
@@ -51,6 +58,7 @@ export const TodoApp = () => {
                     <TodoList
                         todos={ todos }
                         onDeleteTodo={ handleDeleteTodo }
+                        onToggleTodo={ handleToggleTodo }
                     />
                 </div>
                 <div className="col-5">

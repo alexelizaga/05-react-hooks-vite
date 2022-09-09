@@ -4,9 +4,10 @@ import { TodoItem } from './';
 type TodoListProps = {
     todos: Todo[];
     onDeleteTodo: (todo: Todo) => void;
+    onToggleTodo: (todo: Todo) => void;
 }
 
-export const TodoList = ( { todos, onDeleteTodo }: TodoListProps ) => {
+export const TodoList = ( { todos, onDeleteTodo, onToggleTodo }: TodoListProps ) => {
   return (
     <ul className="list-group">
         {
@@ -15,6 +16,7 @@ export const TodoList = ( { todos, onDeleteTodo }: TodoListProps ) => {
                   key={ todo.id }
                   todo={ todo }
                   onDeleteTodo={ onDeleteTodo }
+                  onToggleTodo={ onToggleTodo }
                 />
             ) )
         }

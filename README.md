@@ -33,6 +33,7 @@
 145. Add a new TODO
 146. Save and read TODOs from LocalStorage
 147. Delete TODO
+148. Toggle Todo
 
 ## Tests
 
