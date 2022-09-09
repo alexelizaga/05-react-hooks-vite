@@ -32,6 +32,7 @@
 143. Task: Create components and emmit events
 145. Add a new TODO
 146. Save and read TODOs from LocalStorage
+147. Delete TODO
 
 ## Tests
 
