@@ -29,6 +29,7 @@
 134. Memorize task
 141. useReducer - Todo List
 142. Creating the todos list shell
+143. Task: Create components and emmit events
 
 ## Tests
 

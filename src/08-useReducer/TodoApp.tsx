@@ -1,6 +1,9 @@
 import { useReducer } from 'react';
 
 import { todoReducer } from './todoReducer';
+import { TodoAdd } from './components';
+import { TodoList } from './components';
+import { Todo } from './Todo';
 
 const initialState: any  = [
     {
@@ -19,6 +22,10 @@ export const TodoApp = () => {
 
     const [ todos, dispatch ] = useReducer( todoReducer, initialState );
 
+    const handleNewTodo = ( todo: Todo ) => {
+        console.log( todo );
+    }
+
     return (
         <>
             <h1>TodoApp: { todos.length }, <small>pendientes: 2</small> </h1>
@@ -26,38 +33,14 @@ export const TodoApp = () => {
 
             <div className="row">
                 <div className="col-7">
-                    <ul className="list-group">
-                        {
-                            todos.map( todo => (
-                                <li key={ todo.id } className="list-group-item d-flex justify-content-between">
-                                    <span className="align-self-center">{ todo.description }</span>
-                                    <button className="btn btn-danger">Borrar</button>
-                                </li>
-                            ) )
-                        }
-                    </ul>
+                    <TodoList todos={ todos } />
                 </div>
                 <div className="col-5">
                     <h4>Add TODO</h4>
                     <hr />
-                    <form>
-                        <input
-                            type="text"
-                            placeholder="What to do?"
-                            className="form-control"
-                        />
-
-                        <button
-                            type="submit"
-                            className="btn btn-outline-primary mt-1"
-                        >
-                            Add
-                        </button>
-                    </form>
+                    <TodoAdd onNewTodo={ handleNewTodo } />
                 </div>
             </div>
-
-            
         </>
     )
 
