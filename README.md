@@ -28,6 +28,7 @@
 133. useCallback with arguments
 134. Memorize task
 141. useReducer - Todo List
+142. Creating the todos list shell
 
 ## Tests
 
