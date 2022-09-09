@@ -31,6 +31,7 @@
 142. Creating the todos list shell
 143. Task: Create components and emmit events
 145. Add a new TODO
+146. Save and read TODOs from LocalStorage
 
 ## Tests
 
