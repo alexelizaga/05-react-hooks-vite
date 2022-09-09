@@ -1,9 +1,12 @@
+import { Todo } from './Todo';
 
-export const todoReducer = ( initialState = [], action: any ) => {
+export interface TodoState extends Array<Todo>{}
+
+export const todoReducer = ( initialState: TodoState = [], action: { type: string, payload: Todo } ) => {
 
     switch (action?.type) {
-        case 'ABC':
-            throw new Error('Action.type = ABC is not implemented');
+        case '[TODO] Add Todo':
+            return [ ...initialState, action.payload ]
         default:
             return initialState;
     }

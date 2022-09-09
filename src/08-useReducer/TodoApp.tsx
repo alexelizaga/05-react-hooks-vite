@@ -1,11 +1,11 @@
 import { useReducer } from 'react';
 
-import { todoReducer } from './todoReducer';
+import { todoReducer, TodoState } from './todoReducer';
 import { TodoAdd } from './components';
 import { TodoList } from './components';
 import { Todo } from './Todo';
 
-const initialState: any  = [
+const initialState: TodoState = [
     {
         id: new Date().getTime(),
         description: 'Collect the soul stone',
@@ -23,7 +23,11 @@ export const TodoApp = () => {
     const [ todos, dispatch ] = useReducer( todoReducer, initialState );
 
     const handleNewTodo = ( todo: Todo ) => {
-        console.log( todo );
+        const action: { type: string, payload: Todo } = {
+            type: '[TODO] Add Todo',
+            payload: todo
+        }
+        dispatch( action );
     }
 
     return (

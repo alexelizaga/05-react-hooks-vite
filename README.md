@@ -30,6 +30,7 @@
 141. useReducer - Todo List
 142. Creating the todos list shell
 143. Task: Create components and emmit events
+145. Add a new TODO
 
 ## Tests
 
