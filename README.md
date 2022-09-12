@@ -35,6 +35,7 @@
 147. Delete TODO
 148. Toggle Todo
 149. Task: useTodo
+155. Router App configuration
 
 ## Tests
 
