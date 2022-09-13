@@ -10,6 +10,7 @@ export const MainApp = () => {
   return (
     <UserProvider>
         <Navbar />
+        <hr />
 
         <Routes>
             <Route path='/' element={ <HomePage /> } />

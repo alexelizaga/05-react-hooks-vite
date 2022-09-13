@@ -41,10 +41,60 @@
 158. Navlink
 159. CreateContext and ContextProvider
 160. useContext
+164. Jest config
 
 ## Tests
 
+## Install testing
 
+yarn add --dev @testing-library/react
+yarn add --dev @testing-library/jest-dom
+yarn add --dev @testing-library/user-event
+yarn add --dev @babel/preset-react
+yarn add --dev @babel/preset-typescript
+yarn add --dev @babel/preset-env
+yarn add --dev identity-obj-proxy
+yarn add --dev jest @types/jest
+
+1. jest-setup.ts
+
+```
+    import "@testing-library/jest-dom";
+```
+
+2. package.json
+
+```
+    "scripts": {
+        "test": "jest --watchAll"
+    }
+```
+
+3. jest.config.js
+
+```
+    module.exports = {
+        testEnvironment: 'jsdom',
+        setupFilesAfterEnv: [
+            '<rootDir>/jest-setup.ts'
+        ],
+        moduleNameMapper: {
+            '\\.(css|less)$': 'identity-obj-proxy'
+        }
+    }
+```
+
+3. babel.config.js
+
+```
+    module.exports = {
+        presets: [
+            [ '@babel/preset-env', { targets: {node: 'current'} } ],
+            [ '@babel/preset-react', { runtime: 'automatic' } ],
+            '@babel/preset-typescript',
+        ],
+    };
+```
 
 ## Good practices
 
