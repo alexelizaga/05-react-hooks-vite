@@ -46,11 +46,18 @@
 166. Eject function in the test
 167. CustomHook - useForm Test
 168. Test multiple hooks
+169. Test useFetch response
 
 ## Tests
 
 - renderHook
-- act
+- act()
+- getByText()
+- jest.mock()
+- jest.fn()
+- jest.clearAllMocks()
+- mockReturnValue()
+- fireEvent()
 
 ## Install testing
 
