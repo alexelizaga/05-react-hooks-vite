@@ -12,8 +12,7 @@ describe('Test <MultipleCustomHook />', () => {
         expect( screen.getByText('Loading...') );
         expect( screen.getByText('Breaking Bad Quotes') );
 
-        const nextButton = screen.getByRole('button', { name: 'Next quote' });
-        // console.log( nextButton );
+        const nextButton: HTMLButtonElement = screen.getByRole('button', { name: 'Next quote' });
         expect( nextButton.disabled ).toBeTruthy();
         
 
