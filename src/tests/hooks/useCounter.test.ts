@@ -61,7 +61,7 @@ describe('Test useCounter', () => {
             reset();
         });
 
-        expect( result.current.counter ).toBe(99);
+        expect( result.current.counter ).toBe(100);
 
     })
 
