@@ -52,6 +52,7 @@
 173. Test TodoItem events
 174. Test TodoApp
 175. Test useContext
+176. Test context functions
 
 ## Tests
 
