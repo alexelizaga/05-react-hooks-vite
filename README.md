@@ -49,6 +49,7 @@
 169. Test useFetch response
 170. Test Reducer
 172. Test TodoItem component
+173. Test TodoItem events
 
 ## Tests
 
@@ -63,6 +64,7 @@
 - toContain()
 - screen.debug()
 - getByLabelText()
+- getByRole()
 
 ## Install testing
 
