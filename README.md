@@ -69,6 +69,7 @@
 - screen.debug()
 - getByLabelText()
 - getByRole()
+- MemoryRouter
 
 ## Install testing
 
