@@ -48,6 +48,7 @@
 168. Test multiple hooks
 169. Test useFetch response
 170. Test Reducer
+172. Test TodoItem component
 
 ## Tests
 
@@ -60,6 +61,8 @@
 - mockReturnValue()
 - fireEvent()
 - toContain()
+- screen.debug()
+- getByLabelText()
 
 ## Install testing
 
