@@ -50,6 +50,7 @@
 170. Test Reducer
 172. Test TodoItem component
 173. Test TodoItem events
+174. Test TodoApp
 
 ## Tests
 

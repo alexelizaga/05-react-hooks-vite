@@ -1,11 +1,6 @@
 import { Todo } from '../Todo';
 import { useForm } from '../../hooks/useForm';
 
-const newTodo = {
-    id: new Date().getTime(),
-    description: 'Collect the time stone',
-    done: false,
-}
 
 type TodoAddProps = {
     onNewTodo: ( todo: Todo ) => void;
