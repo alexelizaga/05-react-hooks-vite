@@ -47,6 +47,7 @@
 167. CustomHook - useForm Test
 168. Test multiple hooks
 169. Test useFetch response
+170. Test Reducer
 
 ## Tests
 
@@ -58,6 +59,7 @@
 - jest.clearAllMocks()
 - mockReturnValue()
 - fireEvent()
+- toContain()
 
 ## Install testing
 
