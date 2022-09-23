@@ -81,6 +81,7 @@ yarn add --dev @babel/preset-typescript
 yarn add --dev @babel/preset-env
 yarn add --dev identity-obj-proxy
 yarn add --dev jest @types/jest
+yarn add --dev jest-environment-jsdom
 
 1. jest-setup.ts
 
