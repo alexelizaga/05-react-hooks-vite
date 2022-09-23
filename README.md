@@ -95,6 +95,7 @@ yarn add --dev jest @types/jest
         "test": "jest --watchAll"
     }
 ```
+delete line "type": "module",
 
 3. jest.config.js
 
